@@ -1,0 +1,40 @@
+.site-footer {
+	@include clearfix;
+	@include brand-box();
+	clear: both;
+	margin: 2em 0 3em;
+}
+
+.social-media-link-footer {
+	
+	@include breakpoint($bp-l) {
+		float: left;
+	}
+}
+
+.contact-info-footer {
+	max-width: 308px;
+	p {
+		@include font-size(35);
+		font-weight: bold;
+		line-height: 0.6em;
+		margin: 0;
+		a {
+			@include font-size(18);
+			text-decoration: none;
+		}
+	}
+
+	@include breakpoint($bp-l) {
+		clear: left;
+		float: left;
+	}	
+}
+
+.address-footer {
+	
+	@include breakpoint($bp-l) {
+		float: right;
+		text-align: right;
+	}
+}

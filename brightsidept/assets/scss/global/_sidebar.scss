@@ -1,0 +1,21 @@
+.sidebar {
+	.block {
+		@include brand-box();
+		.block-title {
+			background: $brand-client;
+			border: 1px solid $white;
+			@include border-radius(10px 10px 0 0);
+			color: $white;
+			@include font-size(17);
+			margin: -0.9em -1.3em 1em;
+			padding: $pad-quarter $pad-and-half;
+			text-shadow: 1px 1px 1px $brand-client-supporting;
+			text-transform: uppercase;
+			a,
+			a:visited {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+}

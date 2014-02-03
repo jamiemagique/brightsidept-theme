@@ -1,0 +1,48 @@
+// Headings
+ // Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/
+//
+h1,
+.alpha { 
+	@include brand-font();
+	@include font-size(38);
+	line-height: 1.3em;
+	&.title {
+		background: $brand-client;
+		border: 1px solid $white;
+		color: $white;
+		line-height: 1.1em;
+		margin: 0 -0.59em;
+		padding: 0.25em 0.59em 0.2em;
+		text-shadow: 1px 1px 1px $brand-client-supporting;
+	}
+}
+
+h2,
+.beta { 
+	@include brand-font();
+	@include font-size(28);
+	color: $brand-client-supporting;
+	line-height: 1em;
+	margin: 0 0 $space-half;
+}
+
+h3,
+.gamma {
+	@include font-size(14);
+	color: $brand-client-supporting;
+}
+
+h4,
+.delta {
+  
+}
+
+h5,
+.epsilon {
+    
+}
+
+h6,
+.zeta {
+  
+}

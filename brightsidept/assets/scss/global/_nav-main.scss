@@ -1,0 +1,84 @@
+// Main navigation
+.nav-main {
+	clear: both;
+	display: none;
+	
+	@include breakpoint($bp-l) {
+		display: block;
+		@include brand-box();
+		@include brand-font();
+		letter-spacing: 1px;
+		margin: 0 0 $space-double;
+		padding-bottom: 0.75em;
+		padding-top: 0.75em;
+		a,
+		a:visited {
+			color: $brand-client;
+			text-decoration: none;
+			&:hover {
+				text-shadow: 0 0 2px $brand-client;
+			}
+		}
+		li.active-trail {
+			a {
+				color: $brand-client-supporting;
+				&:hover {
+					text-shadow: none;
+				}
+			}
+		}
+		> ul {
+			@include clearfix;
+			@include font-size(31);
+			line-height: 1em;
+			margin: 0;
+			padding: 0;
+			> li {
+				float: left;
+				margin: 0 20px 0 0;
+			}
+			ul {
+				display: none;
+			}
+		}
+	}
+}
+
+// Slide
+a.slide-menu {
+	background: $black;
+	display: block;
+	float: right;
+	height: 20px;
+	margin: 15px 0 0;
+	width: 20px;
+	
+	@include breakpoint($bp-m) {
+		margin: 35px 0 0;
+	}
+	
+	@include breakpoint($bp-l) {
+		display: none;
+	}
+}
+
+// Footer
+.nav-main-footer {
+	@include brand-font();
+	letter-spacing: 1px;
+	a,
+	a:visited {
+		color: $brand-client;
+		text-decoration: none;
+	}	
+	> ul {
+		@include clearfix;
+		@include font-size(28);
+		margin: 0;
+		padding: 0;
+		> li {
+			float: left;
+			margin: 0 20px 0 0;
+		}
+	}
+}

@@ -1,0 +1,55 @@
+/* Border-Box http:/paulirish.com/2012/box-sizing-border-box-ftw/ */
+* { 
+	@include box-sizing(border-box); 
+}
+
+body {
+  background: $brand-grey;
+  color: $text;
+  font-family: $font;
+  font-size: 87.5%; // 0.875em - 14px - We dont use the font-size mixin here as this sets the base font size
+  line-height: 1.5;
+}
+
+// Anchors
+a {
+	color: $brand-client;
+	text-decoration: underline;
+	&:visited {
+		color: $brand-client-supporting;
+	}
+}
+
+// Text-Related Elements 
+p {
+	margin: 0 0 $space;
+}
+
+// Lists
+ul {
+	list-style-type: disc;
+	margin: 0 0 $space;
+	padding: 0 0 0 $pad-double;
+	li {
+		
+	}
+}
+
+// Blockquote 
+blockquote {
+	
+}
+
+// Horizontal Rule
+hr {
+	border: 0;
+  height: 1px;
+  background: $brand-client;
+  margin: $space 0;
+}
+
+// Abbreivation
+abbr {
+  border-bottom: 1px dotted $text;
+  cursor: help;
+}

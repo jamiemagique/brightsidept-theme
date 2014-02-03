@@ -1,0 +1,33 @@
+// Colours
+$white: #FFFFFF;
+$black: #000000;
+
+$text: #717373;
+
+$brand-client: #47C5EB;
+$brand-client-supporting: #0E7797;
+
+$brand-grey: #E1E4E5;
+
+// Fonts
+$brand-font: 'league_gothicregular';
+$font: Helvetica, Arial, "Bitstream Vera Sans", sans-serif;
+
+// Spaces
+$space: 1em;
+$space-half: $space/2;
+$space-quarter: $space/4;
+$space-double: $space*2;
+
+$pad: 1em;
+$pad-half: $pad/2;
+$pad-quarter: $pad/4;
+$pad-and-half: $pad+$pad-half;
+$pad-double: $pad*2;
+
+// Breakpoints
+$bp-xs: 15em;
+$bp-s: 20em;
+$bp-m: 30em;
+$bp-ml: 40em;
+$bp-l: 50em;

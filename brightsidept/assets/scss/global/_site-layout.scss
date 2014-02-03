@@ -1,0 +1,30 @@
+.l-site {
+	margin: 0 auto;
+	max-width: 940px;
+	padding: 0 $pad;
+}
+
+// Left sidebar
+body.one-sidebar.sidebar-left {
+	main {
+		margin-bottom: $space-double;
+	}
+	.l-sidebar-left {
+		margin-bottom: $space-double;
+		.block {
+			margin-bottom: $space-double;
+		}
+	}
+	
+	@include breakpoint($bp-l) {
+		main {
+			@include grid-span(9, 4);
+		}
+		.l-sidebar-left {
+			@include grid-span(3, 1);
+			.block {
+				margin-right: $space-half;
+			}
+		}
+	}
+}

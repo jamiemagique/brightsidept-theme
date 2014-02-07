@@ -126,10 +126,11 @@ function brightsidept_preprocess_comment(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("block" in this case.)
  */
+/* -- Delete this line if you want to use this function
 function brightsidept_preprocess_block(&$vars, $hook) {
   //print_r($vars['template_files']);
 }
-
+// */
 
 /**
  * Theme a "Submitted by ..." notice.
@@ -166,9 +167,24 @@ function brightsidept_node_submitted($node) {
 function brightsidept_breadcrumb($breadcrumb) {
   if (!empty($breadcrumb)) {
     foreach ($breadcrumb as $key => $crumb) {
-	    $breadcrumb[$key] = '<li>' . $crumb . '<span class="crumbs-sep"> › </span></li>';
+	    $breadcrumb[$key] = '<li>' . $crumb . '<span class="crumbs-sep"> &raquo; </span></li>';
     }
     $page_title = '<li>' . drupal_get_title() . '</li>';
     return '<nav class="crumbs"><h2 class="is-vishidden">' . t('You are here') . '</h2><ul>' . implode('', $breadcrumb) . $page_title . '</ul></nav>';
   }
+}
+
+/**
+ * theme_menu_item()
+ */
+function brightsidept_menu_item($link, $has_children, $menu = '', $in_active_trail = FALSE, $extra_class = NULL) {
+  $class = ($menu ? 'expanded' : ($has_children ? 'collapsed' : 'leaf'));
+  if (!empty($extra_class)) {
+    $class .= ' ' . $extra_class;
+  }
+  if ($in_active_trail) {
+    $class .= ' active-trail';
+    $class .= ' Selected';
+  }
+  return '<li class="' . $class . '">' . $link . $menu . "</li>\n";
 }

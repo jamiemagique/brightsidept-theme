@@ -1,12 +1,25 @@
 .crumbs {
+	background: $brand-grey-light url(../images/brand-logo-grey.png) no-repeat right top;
+	background-size: contain;
+	@include border-radius(10px 10px 0 0);
 	@include font-size(11);
+	margin: -14px -21px 0;
+	padding: 12px 21px 9px;
 	ul {
 		@include clearfix;
 		list-style: none;
-		margin: 0 0 $space;
+		margin: 0;
 		padding: 0;
 		li {
 			float: left;
+			a {
+				color: $text;
+				text-decoration: none;
+				&:hover,
+				&:focus {
+					color: $brand-client;
+				}
+			}
 		}
 	}
 	.crumbs-sep {

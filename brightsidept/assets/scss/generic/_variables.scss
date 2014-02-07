@@ -11,6 +11,7 @@ $brand-grey: #E1E4E5;
 
 // Fonts
 $brand-font: 'league_gothicregular';
+$brand-font-alt: 'petitaboldregular';
 $font: Helvetica, Arial, "Bitstream Vera Sans", sans-serif;
 
 // Spaces
@@ -22,8 +23,11 @@ $space-double: $space*2;
 $pad: 1em;
 $pad-half: $pad/2;
 $pad-quarter: $pad/4;
+$pad-three-quarters: ($pad/4)*3;
 $pad-and-half: $pad+$pad-half;
 $pad-double: $pad*2;
+
+$padding: 22px;
 
 // Breakpoints
 $bp-xs: 15em;

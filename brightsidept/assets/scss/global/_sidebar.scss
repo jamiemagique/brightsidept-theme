@@ -6,9 +6,12 @@
 			border: 1px solid $white;
 			@include border-radius(10px 10px 0 0);
 			color: $white;
+			@include brand-font-alt();
 			@include font-size(17);
-			margin: -0.9em -1.3em 1em;
-			padding: $pad-quarter $pad-and-half;
+			margin: -$padding;
+			margin-top: -0.9em;
+			margin-bottom: 1em;
+			padding: $pad-three-quarters $pad $pad-half;
 			text-shadow: 1px 1px 1px $brand-client-supporting;
 			text-transform: uppercase;
 			a,

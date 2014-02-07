@@ -23,7 +23,7 @@ body.one-sidebar.sidebar-left {
 		.l-sidebar-left {
 			@include grid-span(3, 1);
 			.block {
-				margin-right: $space-half;
+				margin-right: $padding;
 			}
 		}
 	}

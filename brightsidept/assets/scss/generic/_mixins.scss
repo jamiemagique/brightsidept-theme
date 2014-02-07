@@ -8,6 +8,14 @@
   text-transform: uppercase;
 }
 
+@mixin brand-font-alt() {
+	font-family: $brand-font-alt;
+	font-style: normal;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 // Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
  // Usage: @include font-size(1, large);
  // Usage: @include font-size(22);

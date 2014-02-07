@@ -1,0 +1,15 @@
+.crumbs {
+	@include font-size(11);
+	ul {
+		@include clearfix;
+		list-style: none;
+		margin: 0 0 $space;
+		padding: 0;
+		li {
+			float: left;
+		}
+	}
+	.crumbs-sep {
+		padding: 0 3px 0 1px;
+	}
+}

@@ -1,0 +1,45 @@
+nav.submenu {
+	display: none;
+	
+	@include brand-box();
+	.submenu-title {
+		@include brand-subtitle();
+	}
+	ul {
+		@include font-size(17);
+		padding: 0;
+		margin: (-$pad) (-$padding) (-$pad-three-quarters);
+		li {
+			border-bottom: 1px solid $brand-grey-alt;
+			list-style: none;
+			margin: 0;
+			&:nth-last-of-type(1) {
+				border-bottom: none;
+			}
+			a {
+				color: $brand-client-supporting;
+				display: block;
+				padding: 9px $pad;
+				text-decoration: none;
+				&:hover,
+				&:focus {
+					color: $brand-client;
+					text-decoration: none;
+				}
+				&.active {
+					&,
+					&:hover,
+					&:focus {
+						color: $brand-client-supporting;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+	
+	@include breakpoint($bp-l) {
+		display: block;
+		margin-right: 5px;
+	}
+}

@@ -46,15 +46,22 @@
 
 // Slide
 a.slide-menu {
-	background: $black;
+	border-bottom: 4px solid $brand-client;
+	border-top: 4px solid $brand-client;
 	display: block;
 	float: right;
-	height: 20px;
-	margin: 15px 0 0;
+	margin: 18px 5px 0;
+	padding: 3px 0;
 	width: 20px;
+	.slide-menu-mid {
+		background: $brand-client;
+		display: block;
+		height: 4px;
+		width: 100%;
+	}
 	
 	@include breakpoint($bp-m) {
-		margin: 35px 0 0;
+		margin-top: 33px;
 	}
 	
 	@include breakpoint($bp-l) {

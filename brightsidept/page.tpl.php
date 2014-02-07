@@ -97,7 +97,7 @@
 		<header class="site-header" role="banner">
 			<h1 class="site-logo"><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" rel="home"><span class="is-invisible"><?php print $site_name; ?></span></a></h1>
 			<?php if ($navbar): ?>
-				<a class="slide-menu" href="#menu"><i class="slide-menu-mid"></i><span class="is-vishidden"><?php print t('Menu'); ?></span></a>
+				<a class="slide-menu" href="#menu"><i class="slide-menu-mid"></i></a>
 			<?php endif; ?>
 	    <?php if ($header): ?>
 	    	<?php print $header; ?>

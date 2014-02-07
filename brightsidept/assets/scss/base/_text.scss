@@ -3,14 +3,6 @@
 	@include box-sizing(border-box); 
 }
 
-body {
-  background: $brand-grey;
-  color: $text;
-  font-family: $font;
-  font-size: 87.5%; // 0.875em - 14px - We dont use the font-size mixin here as this sets the base font size
-  line-height: 1.5;
-}
-
 // Anchors
 a {
 	color: $brand-client;

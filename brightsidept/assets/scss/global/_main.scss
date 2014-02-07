@@ -1,3 +1,21 @@
+body {
+  background: $brand-grey;
+  color: $text;
+  font-family: $font;
+  font-size: 87.5%; // 0.875em - 14px - We dont use the font-size mixin here as this sets the base font size
+  line-height: 1.5;
+}
+
+.bg-grad {
+	@include background-image(linear-gradient(white, $brand-grey));
+	height: 196px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
 main {
 	@include brand-box();
 	h2 {

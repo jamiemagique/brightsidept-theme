@@ -29,7 +29,6 @@ stylesheets[all][] = ctools.css
 stylesheets[all][] = filefield.css
 stylesheets[all][] = views_slideshow.css
 stylesheets[all][] = fieldgroup.css
-stylesheets[all][] = views.css
 
 
 ; Optionally add some jquery scripts to your theme.

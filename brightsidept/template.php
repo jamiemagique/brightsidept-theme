@@ -160,3 +160,15 @@ function brightsidept_node_submitted($node) {
     ));
 }
 
+/**
+ * theme_breadcrumb()
+ */
+function brightsidept_breadcrumb($breadcrumb) {
+  if (!empty($breadcrumb)) {
+    foreach ($breadcrumb as $key => $crumb) {
+	    $breadcrumb[$key] = '<li>' . $crumb . '<span class="crumbs-sep"> › </span></li>';
+    }
+    $page_title = '<li>' . drupal_get_title() . '</li>';
+    return '<nav class="crumbs"><h2 class="is-vishidden">' . t('You are here') . '</h2><ul>' . implode('', $breadcrumb) . $page_title . '</ul></nav>';
+  }
+}

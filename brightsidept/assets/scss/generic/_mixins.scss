@@ -40,3 +40,27 @@
 		background: $white;
 	}
 }
+
+// Brand subtitle
+ // Usage: @include brand-subtitle();
+//
+@mixin brand-subtitle() {
+	background: $brand-client url(../images/brand-logo-white.png) no-repeat right top;
+	background-size: contain;
+	border: 1px solid $white;
+	@include border-radius(10px 10px 0 0);
+	color: $white;
+	@include brand-font-alt();
+	@include font-size(17);
+	margin: -$padding;
+	margin-top: -0.9em;
+	margin-bottom: 1em;
+	padding: $pad-three-quarters $pad $pad-half;
+	text-shadow: 1px 1px 1px $brand-client-supporting;
+	text-transform: uppercase;
+	a,
+	a:visited {
+		color: $white;
+		text-decoration: none;
+	}
+}

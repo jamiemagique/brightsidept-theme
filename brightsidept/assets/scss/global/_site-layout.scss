@@ -1,7 +1,7 @@
 .l-site {
 	margin: 0 auto;
-	max-width: 940px;
-	padding: 0 $pad;
+	max-width: 940px + ($site-padding*2);
+	padding: 0 $site-padding;
 }
 
 // Left sidebar
@@ -23,7 +23,7 @@ body.one-sidebar.sidebar-left {
 		.l-sidebar-left {
 			@include grid-span(3, 1);
 			.block {
-				margin-right: $padding;
+				margin-right: 5px;
 			}
 		}
 	}

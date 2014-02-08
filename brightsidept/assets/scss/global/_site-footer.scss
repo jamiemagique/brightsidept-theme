@@ -1,8 +1,16 @@
 .site-footer {
 	@include clearfix;
 	@include brand-box();
+	background-image: url(../images/brand-logo-colour-xl.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;	
 	clear: both;
 	margin: 2em 0 3em;
+	
+	@include breakpoint($bp-ml) {
+		background-size: contain;
+	}
 }
 
 .social-media-link-footer {

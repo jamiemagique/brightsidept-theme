@@ -73,6 +73,7 @@ a.slide-menu {
 .nav-main-footer {
 	@include brand-font();
 	letter-spacing: 1px;
+	margin-bottom: $space;
 	a,
 	a:visited {
 		color: $brand-client;
@@ -81,11 +82,18 @@ a.slide-menu {
 	> ul {
 		@include clearfix;
 		@include font-size(28);
+		line-height: 1.2em;
 		margin: 0;
 		padding: 0;
 		> li {
 			float: left;
 			margin: 0 20px 0 0;
 		}
+	}
+	
+	@include breakpoint($bp-l) {
+		background: url(../images/logo-small.png) no-repeat right top;
+		padding-right: 200px; // space for the background image
+		min-height: 32px; // height of the background image
 	}
 }

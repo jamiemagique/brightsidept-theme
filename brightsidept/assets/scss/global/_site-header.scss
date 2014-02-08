@@ -30,6 +30,22 @@
 	}
 }
 
+// Additional logos
+.ad-logos {
+	display: none;
+	
+	@include breakpoint($bp-m) {
+		display: block;
+		float: left;
+		margin: 0 0 0 3px;
+		max-width: 125px;
+	}
+	
+	@include breakpoint($bp-l) {
+		max-width: inherit;
+	}
+}
+
 // Contact details
 .contact-info {
 	display: none;

@@ -45,3 +45,10 @@ abbr {
   border-bottom: 1px dotted $text;
   cursor: help;
 }
+
+// Media
+img,
+video {
+	height: auto;
+	max-width: 100%;
+}

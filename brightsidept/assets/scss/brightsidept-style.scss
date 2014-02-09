@@ -12,7 +12,8 @@
   "base/reset",
   "base/global-classes",
 	"base/headings",
-	"base/text";
+	"base/text",
+	"base/forms";
   
 // Global
 @import
@@ -29,4 +30,5 @@
 // Components
 @import
 	"components/jquery-mmenu",
-	"components/submenu";
+	"components/submenu",
+	"components/profile";

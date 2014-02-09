@@ -1,0 +1,21 @@
+form {
+	label {
+		display: block;
+		font-weight: bold;
+	}
+	.form-item {
+		margin: 0 0 $space;
+		input,
+		textarea {
+			border: 1px solid $brand-grey;
+			max-width: 280px; // lowest screen size minus some for the sites padding
+			padding: 7px;
+			&:focus {
+				border-color: $brand-client;
+			}
+		}
+	}
+	.description {
+		font-size: 75%;
+	}
+}

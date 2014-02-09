@@ -50,11 +50,13 @@
 ?>
 <article class="<?php print $classes; ?>">
 
-  <?php if (!$page): ?>
-    <header>
-    	<h2 class="title"><a href="<?php print $node_url; ?>" title="<?php print $title ?>"><?php print $title; ?></a></h2>
-    </header>
-  <?php endif; ?>
+	<header>
+	  <?php if (!$page): ?>
+	    <h2 class="title"><a href="<?php print $node_url; ?>" title="<?php print $title ?>"><?php print $title; ?></a></h2>
+	  <?php else: ?>
+		  <h1 class="title"><?php print $title; ?></h1>
+	  <?php endif; ?>
+  </header>
 
   <?php if ($unpublished): ?>
     <div class="unpublished"><?php print t('Unpublished'); ?></div>
@@ -74,9 +76,7 @@
     </div>
   <?php endif; ?>
 
-  <div class="content">
-    <?php print $content; ?>
-  </div>
+  <?php print $content; ?>
 
   <?php print $links; ?>
 

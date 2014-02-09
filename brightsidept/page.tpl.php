@@ -118,7 +118,9 @@
 		
 		<main role="main">
 		  <?php print $breadcrumb; ?>
-			<h1 class="title"><?php print $title; ?></h1>
+		  <?php if ($title && !isset($is_node)): ?>
+				<h1 class="title"><?php print $title; ?></h1>
+			<?php endif; ?>
 			<?php print $messages; ?>
 			<?php if ($tabs): ?>
 				<?php print $tabs; ?>

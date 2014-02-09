@@ -30,3 +30,13 @@ body.one-sidebar.sidebar-left {
 		}
 	}
 }
+
+.l-img-right {
+	margin: 0 0 $space;
+	
+	@include breakpoint($bp-m) {
+		float: right;
+		margin: 0 0 $space $space;
+		max-width: 50%;
+	}
+}

@@ -1,0 +1,28 @@
+.author-info {
+	@include clearfix;
+	h2 {
+		a {
+			&,
+			&:hover,
+			&:focus {
+				text-decoration: none;
+			}
+		}
+	}
+	.author-thumb {
+		float: left;
+		margin: 0 $space $space-half 0;
+	}
+	.author-teaser {
+		overflow: hidden; // keeps the text from wrapping around the image
+	}
+	
+	@include breakpoint($bp-l) {
+		.author-teaser {
+			clear: both;
+			p {
+				margin: 0;
+			}
+		}		
+	}
+}

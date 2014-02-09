@@ -35,6 +35,14 @@ nav.submenu {
 					}
 				}
 			}
+			&.active-trail {
+				a,
+				a:hover,
+				a:focus {
+					color: $brand-client-supporting;
+					font-weight: bold;
+				}
+			}
 		}
 	}
 	

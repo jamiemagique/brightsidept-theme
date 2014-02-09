@@ -84,11 +84,12 @@ function brightsidept_preprocess(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function brightsidept_preprocess_page(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
+  $args = arg();
+  if ($args[0] == 'node' && is_numeric($args[1]) && $args[2] != 'edit') {
+  	$vars['is_node'] = TRUE;
+  }
 }
-// */
 
 /**
  * Override or insert variables into the node templates.

@@ -64,3 +64,12 @@
 		text-decoration: none;
 	}
 }
+
+// Brand image style
+ // @include brand-image();
+//
+@mixin brand-image() {
+	@include border-radius(100px); // large amount as we want the image to be round!
+	@include single-box-shadow(rgba(0,0,0,0.3), 0, 2px, 5px, 0);
+}
+

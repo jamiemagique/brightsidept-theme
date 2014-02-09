@@ -1,0 +1,14 @@
+div.messages {
+	background: lightgreen;
+	border: 1px solid green;
+	margin: 0 0 $space-double;
+	padding: $pad;
+	&.error {
+		background: lightred;
+		border-color: red;
+	}
+	&.warning {
+		background: lightorange;
+		border-color: orange;
+	}
+}

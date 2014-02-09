@@ -31,8 +31,10 @@ h2,
 
 h3,
 .gamma {
-	@include font-size(14);
 	color: $brand-client-supporting;
+	@include brand-font-alt();
+	@include font-size(11);
+	margin: 0 0 $space;
 }
 
 h4,

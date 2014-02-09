@@ -1,6 +1,7 @@
 ul.tabs {
 	@include clearfix;
 	@include font-size(13);
+	margin: $space 0;
 	padding: 0;
 	li {
 		float: left;

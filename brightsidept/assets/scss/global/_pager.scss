@@ -1,0 +1,13 @@
+ul.pager {
+	clear: both;
+	padding: 0;
+	margin: $space 0;
+	text-align: center;
+	li {
+		display: inline-block;
+		margin: 0 $space-quarter;
+	}
+	.pager-current {
+		font-weight: bold;
+	}
+}

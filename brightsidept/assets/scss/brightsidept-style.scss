@@ -24,12 +24,18 @@
 	"global/site-footer",
 	"global/sidebar",
 	"global/main",
+	"global/messages",
 	"global/crumbs",
-	"global/tabs";
+	"global/tabs",
+	"global/pager";
 	
 // Components
 @import
 	"components/jquery-mmenu",
 	"components/submenu",
-	"components/profile",
-	"components/author-info";
+	"components/author-info",
+	"components/item",
+	"components/box",
+	"components/owl-carousel",
+	"components/carousel",
+	"components/social-media";

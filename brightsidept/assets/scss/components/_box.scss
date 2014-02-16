@@ -1,0 +1,25 @@
+.box {
+	@include brand-box(gradient);
+	.box-image {
+		float: left;
+		margin: 0 $space $space 0;
+		img {
+			@include brand-image();
+		}
+	}
+	h2,
+	h3,
+	p {
+		overflow: hidden;
+	}
+	h2,
+	.box-title {
+		a {
+			color: $brand-client-supporting;
+			&:hover,
+			&:focus {
+				text-shadow: 0px 0px 2px $brand-client-supporting;
+			} 
+		}
+	}
+}

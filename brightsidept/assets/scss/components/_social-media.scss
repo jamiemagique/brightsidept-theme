@@ -1,0 +1,27 @@
+.social-media,
+.social-media-link-footer {
+	a {
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		display: inline-block;
+		height: 37px;
+		margin: 0 $space-quarter 0 0;
+		text-indent: -9999em;
+		width: 34px;
+		&:hover {
+			background-position: 0 1px;
+		}
+		&.facebook {
+			background-image: url(../images/icon-facebook.png);
+		}
+		&.twitter {
+			background-image: url(../images/icon-twitter.png);
+		}
+		&.linkedin {
+			background-image: url(../images/icon-linkedin.png);
+		}
+		&.rss {
+			background-image: url(../images/icon-rss.png);
+		}
+	}
+}

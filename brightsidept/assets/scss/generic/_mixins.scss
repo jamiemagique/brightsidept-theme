@@ -39,6 +39,9 @@
 	@if $type == normal {
 		background: $white;
 	}
+	@if $type == gradient {
+		@include background-image(linear-gradient($brand-offwhite, $brand-lightgrey));
+	}
 }
 
 // Brand subtitle

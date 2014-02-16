@@ -1,0 +1,22 @@
+ul.carousel {
+	margin: 0 0 $space-and-half;
+	padding: 0;
+	li {
+		list-style: none;
+		img {
+			display: block; // gets rid of the space underneath
+		}
+	}
+}
+
+ul.carousel {
+	.owl-wrapper-outer {
+		@include brand-box();
+		@include border-radius(10px 13px 13px 10px);
+		background-clip: padding-box;
+		padding: 0;
+		img {
+			@include border-radius(10px 13px 13px 10px);
+		}
+	}
+}

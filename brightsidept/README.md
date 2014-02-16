@@ -12,8 +12,8 @@ brightsidept-theme
 - Add CSS class to view: items-3col
 - Add CSS classes to each row: item box
 - Add profile image field with div class: box-image
-- Profile name <h2> class: item-title
-- Profile title <h3> class: item-subtitle
+- Profile name H2 class: item-title
+- Profile title H3 class: item-subtitle
 
 ### 1 column listing
 - Row class: item

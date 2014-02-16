@@ -116,6 +116,17 @@
 			<?php print $navbar; ?>
 		<?php endif; ?>
 		
+		<?php if ($is_front): ?>
+			<ul class="carousel">
+				<li><a href="#" title="Description of the page this points to"><img src="http://placeimg.com/940/265/any" alt="Placeholder img" /></a></li>
+				<li><a href="#" title="Description of the page this points to"><img src="http://placeimg.com/940/265/animals" alt="Placeholder img" /></li>
+				<li><a href="#" title="Description of the page this points to"><img src="http://placeimg.com/940/265/arch" alt="Placeholder img" /></a></li>
+				<li><a href="#" title="Description of the page this points to"><img src="http://placeimg.com/940/265/nature" alt="Placeholder img" /></a></li>
+			</ul>
+		<?php endif; ?>
+		
+		<?php print $content_top; ?>
+		
 		<main role="main">
 		  <?php print $breadcrumb; ?>
 		  <?php if ($title && !isset($is_node)): ?>
@@ -126,11 +137,15 @@
 				<?php print $tabs; ?>
 			<?php endif; ?> 
 			<?php print $help; ?>
-			<?php print $content_top; ?>
 			<?php print $content; ?>
-			<?php print $feed_icons; ?>
-			<?php print $content_bottom; ?>		
+			<?php print $feed_icons; ?>		
 		</main>
+		
+		<?php if ($content_bottom): ?>
+			<div class="l-content-bottom">
+				<?php print $content_bottom; ?>
+			</div>
+		<?php endif; ?>
 	
 		<?php if ($left): ?>
 			<div class="l-sidebar-left sidebar">

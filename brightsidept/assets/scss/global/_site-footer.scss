@@ -1,7 +1,8 @@
 .site-footer {
 	@include clearfix;
-	@include brand-box();
-	background-image: url(../images/brand-logo-colour-xl.png);
+	@include brand-box(gradient);
+	@include background-image(url(../images/brand-logo-colour-xl.png),
+														linear-gradient($brand-offwhite, $brand-lightgrey));
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;	

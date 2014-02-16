@@ -1,0 +1,114 @@
+/**
+ * Required default rules
+ */
+.owl-carousel {
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+	.owl-wrapper {
+		display: none;
+		position: relative;
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	.owl-wrapper-outer {
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+}
+
+.owl-item {
+	float: left;
+}
+
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	.owl-page,
+	.owl-buttons div {
+		cursor: pointer;
+	}
+}
+
+// Fix from owl.carousel.css file
+.owl-carousel {
+	.owl-wrapper,
+	.owl-item {
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility:    hidden;
+		-ms-backface-visibility:     hidden;
+	  -webkit-transform: translate3d(0,0,0);
+	  -moz-transform: translate3d(0,0,0);
+	  -ms-transform: translate3d(0,0,0);
+  }
+}
+
+/**
+ * Custom styling
+ */
+$carousel-max-width: 940px + ($site-padding*2) + (50px*2); // where 50px is the width of a carousel button
+ 
+.owl-buttons {
+	display: none;
+
+	@include breakpoint($carousel-max-width) {
+		display: block;
+		left: 0;
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		z-index: 10;
+		.owl-prev,
+		.owl-next {
+			height: 100px;
+			margin-top: -50px;
+			position: absolute;
+			text-indent: -9999em;
+			top: 0;
+			width: 50px;
+			&:hover,
+			&:focus {
+				opacity: 0.5;
+			}
+		}
+		.owl-prev {
+			background: url(../images/carousel-prev.png) no-repeat center center;
+			left: -50px;
+		}
+		.owl-next {
+			background: url(../images/carousel-next.png) no-repeat center center;
+			right: -50px;
+		}
+	}
+}
+
+.owl-pagination {
+	text-align: center;
+	margin: $space-half 0 0;
+	.owl-page {
+		display: inline-block;
+		margin: 0 $space-half;
+		span {
+			@include border-radius(5px);
+			background: $brand-client;
+			display: block;
+			height: 10px;
+			width: 10px;
+		}
+		&.active,
+		&:hover {
+			span {
+				background: $brand-client-supporting;
+			}
+		}
+	}
+	
+	@include breakpoint($carousel-max-width) {
+		display: none;
+	}
+}

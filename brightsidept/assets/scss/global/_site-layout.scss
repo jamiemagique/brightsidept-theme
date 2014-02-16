@@ -6,7 +6,9 @@
 	z-index: 1;
 }
 
-// Left sidebar
+/**
+ * Left sidebar
+ */
 body.one-sidebar.sidebar-left {
 	main {
 		margin-bottom: $space-double;
@@ -38,5 +40,72 @@ body.one-sidebar.sidebar-left {
 		float: right;
 		margin: 0 0 $space $space;
 		max-width: 50%;
+	}
+}
+
+// 2 column content listing
+.items-2col {
+	
+	@include breakpoint($bp-ml) {
+		@include clearfix;
+		$grids: 12;
+		$gutters: 0.75;
+		.item {
+			@include float-span(6);
+			&.even {
+				@include float-span(6, 'last');
+			}
+		}
+	}
+}
+
+// 3 column content listing
+.items-3col {
+	
+	@include breakpoint($bp-ml) {
+		@include clearfix;
+		$grids: 12;
+		$gutters: 1/3;
+		.item {
+			@include float-span(6);
+			&.even {
+				@include float-span(6, 'last');
+			}
+		}
+	}
+	
+	@include breakpoint($bp-l) {
+		@include clearfix;
+		$grids: 12;
+		$gutters: 1/3;
+		.item,
+		.item.even {
+			@include float-span(4);
+			&:nth-of-type(3n) {
+				@include float-span(4, 'last');
+			}
+		}
+	}
+}
+
+/**
+ * Homepage
+ */
+body.front {
+	main {
+		margin: $space-double 0;
+	}
+	.you-tube-video {
+		text-align: center;
+	}
+			
+	@include breakpoint($bp-l) {
+		main {
+			@include float-span(6);
+			margin: 0 0 $space-double;
+		}
+		.l-content-bottom {
+			@include float-span(6, 'last');
+		}
 	}
 }

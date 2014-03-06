@@ -100,7 +100,7 @@
 				<?php 
 					$src = drupal_get_path('theme', 'brightsidept').'/assets/images/logo-wave.png';
 					$img = theme_image($src, 'Wave FM fitness logo', 'Wave FM fitness logo');
-					$path = 'wave';
+					$path = 'wave-fitness';
 					print l($img, $path, array('html' => true));
 				?>
 			</div>

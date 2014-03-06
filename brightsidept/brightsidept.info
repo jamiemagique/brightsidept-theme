@@ -34,6 +34,7 @@ stylesheets[all][] = fieldgroup.css
 ; Optionally add some jquery scripts to your theme.
 scripts[] = assets/js/vendor/jquery.mmenu.min.all.js
 scripts[] = assets/js/vendor/owl.carousel.js
+scripts[] = assets/js/vendor/respond.js
 scripts[] = assets/js/brightsidept.js
 
 ; The regions defined in Zen's default page.tpl.php file.  The name in

@@ -96,14 +96,14 @@
 	
 		<header class="site-header" role="banner">
 			<h1 class="site-logo"><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" rel="home"><span class="is-invisible"><?php print $site_name; ?></span></a></h1>
-			<div class="ad-logos">
+			<!--<div class="ad-logos">
 				<?php 
 					$src = drupal_get_path('theme', 'brightsidept').'/assets/images/logo-wave.png';
 					$img = theme_image($src, 'Wave FM fitness logo', 'Wave FM fitness logo');
 					$path = 'wave';
 					print l($img, $path, array('html' => true));
 				?>
-			</div>
+			</div>-->
 			<?php if ($navbar): ?>
 				<a class="slide-menu" href="#menu"><i class="slide-menu-mid"></i></a>
 			<?php endif; ?>

@@ -32,6 +32,7 @@ stylesheets[all][] = fieldgroup.css
 
 
 ; Optionally add some jquery scripts to your theme.
+scripts[] = assets/js/vendor/modernizr.custom.65250.js
 scripts[] = assets/js/vendor/jquery.mmenu.min.all.js
 scripts[] = assets/js/vendor/owl.carousel.js
 scripts[] = assets/js/vendor/respond.js
